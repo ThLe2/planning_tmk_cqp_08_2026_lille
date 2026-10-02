@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planning TMK – CQP 08 2026 Lille</title>
+<style>
+:root{--prune:#8C1E70;--prune-f:#5E1349;--prune-c:#F4E6EE;--vert:#283C28;--gris:#3C3C3C;--rose:#C77BAA;--gm:#8A7A85;--trame:#E8DCE5;--fond:#FAF6F8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--gris);font:15px/1.45 "Segoe UI",Helvetica,Arial,sans-serif}
+header{background:var(--prune-f);color:#fff;padding:28px 16px 24px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+header .wrap{padding:0}
+.brand{font-weight:700;letter-spacing:.04em;font-size:13px;text-transform:uppercase;opacity:.85}
+h1{margin:6px 0 4px;font-size:26px}
+.sub{opacity:.85;font-size:14px}
+.kpis{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 8px}
+.kpi{background:#fff;border:1px solid var(--trame);border-radius:10px;padding:12px 16px;min-width:150px;flex:1}
+.kpi b{display:block;font-size:26px;color:var(--prune-f)}
+.kpi.pres b{color:var(--prune)} .kpi.dist b{color:var(--vert)}
+.kpi span{font-size:13px;color:var(--gm)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.filters button{font:inherit;font-size:14px;border:1px solid var(--prune);background:#fff;color:var(--prune);border-radius:999px;padding:7px 16px;cursor:pointer}
+.filters button.on{background:var(--prune);color:#fff}
+.month{background:#fff;border:1px solid var(--trame);border-radius:10px;margin:0 0 18px;overflow:hidden}
+.month h2{margin:0;padding:12px 16px;font-size:17px;color:var(--prune-f);background:var(--prune-c);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px}
+.cnt{font-size:12.5px;font-weight:400;color:var(--gm)}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--gm);font-weight:600;padding:8px 16px;border-bottom:1px solid var(--trame)}
+td{padding:10px 16px;border-bottom:1px solid var(--trame);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+tr.pres td:first-child{box-shadow:inset 4px 0 0 var(--prune)}
+tr.dist td:first-child{box-shadow:inset 4px 0 0 var(--vert)}
+.date{white-space:nowrap;width:120px}
+.dn{font-weight:700;font-size:18px;color:var(--prune-f);margin-right:6px}
+.dw{font-size:13px;color:var(--gm)}
+.j{width:80px;font-weight:600;color:var(--vert)}
+.t{font-weight:500}
+.m{width:190px}
+.badge{display:inline-block;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.badge.pres{background:var(--prune);color:#fff}
+.badge.dist{background:#fff;color:var(--vert);border:1px solid var(--vert)}
+.hide{display:none}
+footer{text-align:center;font-size:12px;color:var(--gm);padding:22px 16px 30px}
+@media(max-width:640px){
+ thead{display:none} table,tbody,tr,td{display:block;width:100%}
+ tr{padding:10px 16px;border-bottom:1px solid var(--trame)} td{border:0;padding:2px 0;width:auto}
+ tr.pres{box-shadow:inset 4px 0 0 var(--prune)} tr.dist{box-shadow:inset 4px 0 0 var(--vert)}
+ tr.pres td:first-child,tr.dist td:first-child{box-shadow:none} .date,.j{display:inline-block;width:auto;margin-right:10px} .m{width:auto;margin-top:4px}
+}
+@media print{.filters{display:none} body{background:#fff} .month{break-inside:avoid} header{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+<header><div class="wrap"><div class="brand">TMK Performances</div>
+<h1>Planning des journées TMK</h1>
+<div class="sub">CQP 08 2026 · Lille (au campus) · octobre 2026 → avril 2027</div></div></header>
+<main class="wrap">
+<div class="kpis">
+<div class="kpi"><b>30</b><span>journées TMK Performances</span></div>
+<div class="kpi pres"><b>9</b><span>en présentiel · site de Frémigny</span></div>
+<div class="kpi dist"><b>21</b><span>en distanciel</span></div></div>
+<div class="filters" role="group" aria-label="Filtrer">
+<button class="on" data-f="all">Toutes (30)</button>
+<button data-f="pres">Présentiel Frémigny (9)</button>
+<button data-f="dist">Distanciel (21)</button></div>
+<section class="month" data-m="2026-10">
+<h2>Octobre 2026<span class="cnt">7 j · 1 présentiel · 6 distanciel</span></h2>
+<table><thead><tr><th>Date</th><th>Journée</th><th>Intitulé</th><th>Modalité</th></tr></thead><tbody>
+<tr class="row pres">
+<td class="date"><span class="dn">08</span><span class="dw">Jeudi</span></td>
+<td class="j">J1</td>
+<td class="t">Journée de Lancement TMK</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">20</span><span class="dw">Mardi</span></td>
+<td class="j">J2</td>
+<td class="t">Techniques de Vente - Bases 2/5</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">21</span><span class="dw">Mercredi</span></td>
+<td class="j">J3</td>
+<td class="t">Fondamentaux Assurances 1/2</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">22</span><span class="dw">Jeudi</span></td>
+<td class="j">J4</td>
+<td class="t">Fondamentaux Assurances 2/2</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">23</span><span class="dw">Vendredi</span></td>
+<td class="j">J5</td>
+<td class="t">Techniques de Vente - Activité et Prospection</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">29</span><span class="dw">Jeudi</span></td>
+<td class="j">J6</td>
+<td class="t">Fondamentaux Prévoyance 1/4</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">30</span><span class="dw">Vendredi</span></td>
+<td class="j">J7</td>
+<td class="t">Fondamentaux Prévoyance 2/4</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr></tbody></table></section><section class="month" data-m="2026-11">
+<h2>Novembre 2026<span class="cnt">6 j · 2 présentiel · 4 distanciel</span></h2>
+<table><thead><tr><th>Date</th><th>Journée</th><th>Intitulé</th><th>Modalité</th></tr></thead><tbody>
+<tr class="row pres">
+<td class="date"><span class="dn">02</span><span class="dw">Lundi</span></td>
+<td class="j">J10</td>
+<td class="t">Techniques de Vente - Bases 2/5</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr><tr class="row pres">
+<td class="date"><span class="dn">03</span><span class="dw">Mardi</span></td>
+<td class="j">J11</td>
+<td class="t">Techniques de Vente - Découverte 1/2</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">12</span><span class="dw">Jeudi</span></td>
+<td class="j">J8</td>
+<td class="t">Fondamentaux Prévoyance 3/4</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">13</span><span class="dw">Vendredi</span></td>
+<td class="j">J9</td>
+<td class="t">Techniques de Vente - Bases 3/5</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">24</span><span class="dw">Mardi</span></td>
+<td class="j">J12</td>
+<td class="t">Fondamentaux Prévoyance 4/4</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">27</span><span class="dw">Vendredi</span></td>
+<td class="j">J13</td>
+<td class="t">Technique de Vente - Conseil &amp; Argu 1/6</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr></tbody></table></section><section class="month" data-m="2026-12">
+<h2>Décembre 2026<span class="cnt">2 j · 0 présentiel · 2 distanciel</span></h2>
+<table><thead><tr><th>Date</th><th>Journée</th><th>Intitulé</th><th>Modalité</th></tr></thead><tbody>
+<tr class="row dist">
+<td class="date"><span class="dn">07</span><span class="dw">Lundi</span></td>
+<td class="j">J14</td>
+<td class="t">Fondamentaux Cibles Pro 1/2</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">08</span><span class="dw">Mardi</span></td>
+<td class="j">J15</td>
+<td class="t">Fondamentaux Cibles Pro 1/2</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr></tbody></table></section><section class="month" data-m="2027-1">
+<h2>Janvier 2027<span class="cnt">4 j · 4 présentiel · 0 distanciel</span></h2>
+<table><thead><tr><th>Date</th><th>Journée</th><th>Intitulé</th><th>Modalité</th></tr></thead><tbody>
+<tr class="row pres">
+<td class="date"><span class="dn">11</span><span class="dw">Lundi</span></td>
+<td class="j">J16</td>
+<td class="t">Technique de Vente - Bases 4/5</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr><tr class="row pres">
+<td class="date"><span class="dn">12</span><span class="dw">Mardi</span></td>
+<td class="j">J17</td>
+<td class="t">Technique de Vente - Conseil &amp; Argu 2/6</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr><tr class="row pres">
+<td class="date"><span class="dn">13</span><span class="dw">Mercredi</span></td>
+<td class="j">J18</td>
+<td class="t">Technique de Vente - Découverte 2/2</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr><tr class="row pres">
+<td class="date"><span class="dn">14</span><span class="dw">Jeudi</span></td>
+<td class="j">J19</td>
+<td class="t">Technique de Vente - Conseil &amp; Argu 3/6</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr></tbody></table></section><section class="month" data-m="2027-2">
+<h2>Février 2027<span class="cnt">4 j · 2 présentiel · 2 distanciel</span></h2>
+<table><thead><tr><th>Date</th><th>Journée</th><th>Intitulé</th><th>Modalité</th></tr></thead><tbody>
+<tr class="row dist">
+<td class="date"><span class="dn">04</span><span class="dw">Jeudi</span></td>
+<td class="j">J20</td>
+<td class="t">Fondamentaux Matrimonial</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">05</span><span class="dw">Vendredi</span></td>
+<td class="j">J21</td>
+<td class="t">Environnement Fiscal 1/2</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row pres">
+<td class="date"><span class="dn">08</span><span class="dw">Lundi</span></td>
+<td class="j">J22</td>
+<td class="t">Fondamentaux Epargne</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr><tr class="row pres">
+<td class="date"><span class="dn">09</span><span class="dw">Mardi</span></td>
+<td class="j">J23</td>
+<td class="t">Environnement Fiscal 2/2</td>
+<td class="m"><span class="badge pres">Présentiel · Frémigny</span></td></tr></tbody></table></section><section class="month" data-m="2027-3">
+<h2>Mars 2027<span class="cnt">4 j · 0 présentiel · 4 distanciel</span></h2>
+<table><thead><tr><th>Date</th><th>Journée</th><th>Intitulé</th><th>Modalité</th></tr></thead><tbody>
+<tr class="row dist">
+<td class="date"><span class="dn">08</span><span class="dw">Lundi</span></td>
+<td class="j">J24</td>
+<td class="t">Technique de Vente - Bases 5/5</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">09</span><span class="dw">Mardi</span></td>
+<td class="j">J25</td>
+<td class="t">Fondamentaux Retraite 1/2</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">11</span><span class="dw">Jeudi</span></td>
+<td class="j">J26</td>
+<td class="t">Fondamentaux Retraite 2/2</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">12</span><span class="dw">Vendredi</span></td>
+<td class="j">J27</td>
+<td class="t">Technique de Vente - Conseil &amp; Argu 4/6</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr></tbody></table></section><section class="month" data-m="2027-4">
+<h2>Avril 2027<span class="cnt">3 j · 0 présentiel · 3 distanciel</span></h2>
+<table><thead><tr><th>Date</th><th>Journée</th><th>Intitulé</th><th>Modalité</th></tr></thead><tbody>
+<tr class="row dist">
+<td class="date"><span class="dn">05</span><span class="dw">Lundi</span></td>
+<td class="j">J28</td>
+<td class="t">Technique de Vente - Conseil &amp; Argu 5/6</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">06</span><span class="dw">Mardi</span></td>
+<td class="j">J29</td>
+<td class="t">Technique de Vente - Conseil &amp; Argu 6/6</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr><tr class="row dist">
+<td class="date"><span class="dn">07</span><span class="dw">Mercredi</span></td>
+<td class="j">J30</td>
+<td class="t">Révisions - Clôture</td>
+<td class="m"><span class="badge dist">Distanciel</span></td></tr></tbody></table></section>
+</main>
+<footer>TMK Performances - N° Siret : 49841924100027 - Code NAF : 8559A</footer>
+<script>
+document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('.filters button').forEach(x=>x.classList.toggle('on',x===b));
+ const f=b.dataset.f;
+ document.querySelectorAll('tr.row').forEach(r=>r.classList.toggle('hide',f!=='all'&&!r.classList.contains(f)));
+ document.querySelectorAll('.month').forEach(s=>s.classList.toggle('hide',!s.querySelector('tr.row:not(.hide)')));
+});
+</script></body></html>
